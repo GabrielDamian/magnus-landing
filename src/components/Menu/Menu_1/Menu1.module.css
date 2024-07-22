@@ -6,15 +6,18 @@
     padding-left: 16px;
     font-weight: bold;
     font-size: 1.5rem;
-    color: var(--colors-accent_2);
     text-decoration: none;
-    font-family: var(--fonts-headings);
   }
 .logo a 
 {
   text-decoration: none;
   color: var(--colors-accent_2);
   transition: all 0.3s ease;
+}
+.logo a img 
+{
+  height: 40px;
+  object-fit: contain;
 }
 .logo a:hover 
 {

@@ -5,7 +5,7 @@ import { useMediaQuery, useTheme } from "@mui/material";
 import styles from "./Menu1.module.css";
 import Link from "next/link";
 
-const BurgerMenu = ({ src }) => {
+const BurgerMenu = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -30,7 +30,9 @@ const BurgerMenu = ({ src }) => {
     >
       <Toolbar>
         <div className={styles.logo}>
-          <Link href="/">{src ? `${src?.website_name}` : "Casuța Mea"}</Link>
+          <Link href="/">
+            <img src="/landing/loginRightLogo.png" alt="logo"/>
+          </Link>
         </div>
         {isMobile && (
           <IconButton
@@ -65,23 +67,18 @@ const BurgerMenu = ({ src }) => {
         {!isMobile && (
           <ul className={styles.desktopNav}>
             <li>
-              <Link href="/" className={styles.navLink}>
-                Acasă
+              <Link href="/#servicii" className={styles.navLink}>
+                Servicii
               </Link>
             </li>
             <li>
-              <Link href="/camere" className={styles.navLink}>
-                Camere
+              <Link href="/#integrare" className={styles.navLink}>
+                Integrare
               </Link>
             </li>
             <li>
-              <Link href="/galerie" className={styles.navLink}>
-                Galerie
-              </Link>
-            </li>
-            <li>
-              <Link href="/activitati" className={styles.navLink}>
-                Activități
+              <Link href="/#intrebari" className={styles.navLink}>
+                Intrebari
               </Link>
             </li>
             <li>
@@ -89,9 +86,6 @@ const BurgerMenu = ({ src }) => {
                 Contact
               </Link>
             </li>
-            <Link href="/" className={styles.menuButton}>
-              Rezervă
-            </Link>
           </ul>
         )}
       </Toolbar>
