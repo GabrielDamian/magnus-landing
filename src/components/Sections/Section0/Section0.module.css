@@ -1,0 +1,121 @@
+.landing-hero
+{
+    height: 85vh;
+    background-image: url("../../../../public/landing/hero.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+.landing-hero-magic 
+{
+    width: 70%;
+    display: flex;
+    height: 100%;
+}
+.landing-hero-left 
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landing-hero-left-title
+{
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+.landing-hero-left-subtitle
+{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+.landing-hero-left-buttons
+{
+    display: flex;
+    margin-bottom: 50px;
+}
+.landing-hero-left-buttons-start
+{
+    margin-right: 20px;
+}
+.landing-hero-left-buttons-start p 
+{
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color: white;
+    color: #0F2137;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.landing-hero-left-buttons-start p:hover
+{
+    background-color: #0F2137;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.landing-hero-left-buttons-video
+{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.landing-hero-left-buttons-video:hover 
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.landing-hero-left-buttons-video img 
+{
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.landing-hero-left-buttons-video span
+{
+    color: white;
+    font-size: 1.2rem;
+}
+.landing-hero-left-integration
+{
+}
+.landing-hero-left-integration p 
+{
+    color: rgb(162, 162, 162);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.landing-hero-left-integration-core
+{
+    border: 2px solid white;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.landing-hero-left-integration-core img 
+{
+    object-fit: contain;
+}
+
+
+
+
+
+
+.landing-hero-right
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-hero-right img 
+{
+    height: 80%;
+    object-fit: contain;
+}

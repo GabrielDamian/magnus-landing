@@ -1,0 +1,46 @@
+.section4-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.section4-magic
+{
+    width: 70%;
+    display: flex;
+}
+.section4-container-left 
+{
+    width: 60%;
+}
+.section4-container-left span 
+{
+    color: #244886;
+    margin-bottom: 20px;
+}
+.section4-container-left h1 
+{
+    color: #0F2137;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.section4-container-left p 
+{
+    color: #02073E;
+    line-height: 40px;
+}
+.section4-container-right
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4-container-right img
+{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+}

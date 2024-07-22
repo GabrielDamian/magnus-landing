@@ -1,0 +1,54 @@
+.section5-container
+{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.section5-magic
+{
+    height: 100%;
+    width: 70%;
+    background-image: url('../../../../public/landing/Section5.png');
+    background-size: 100% 100%;
+    display: flex;
+}
+.section5-left
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section5-left img 
+{
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
+}
+.section5-right
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section5-right span 
+{
+    color: #244886;
+    display: block;
+    margin-bottom: 20px;
+}
+.section5-right h1 
+{
+    color: #0F2137;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.section5-right p 
+{
+    color: #02073E;
+    line-height: 40px;
+    width: 80%;
+    font-size: 1.1rem;
+}

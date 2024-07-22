@@ -1,0 +1,177 @@
+.contact-container
+{
+    background-color: white;
+}
+.contact-core
+{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.contact-core-magic
+{
+    width: 70%;
+    height: 100%;
+}
+.contact-top
+{
+    height: 80%;
+    -webkit-box-shadow: 0px 0px 38px -5px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 38px -5px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 38px -5px rgba(0,0,0,0.41);
+    border-radius: 20px;
+    background-image: url('../../../public/landing/contactBg.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-top-core
+{
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+.contact-top-core-left
+{
+    width: 60%;
+    padding-right: 30px;
+}
+.contact-top-core-left-top 
+{
+    height: 20%;
+}
+.contact-top-core-left-top h2 
+{
+    font-size: 2.2rem;
+}
+.contact-top-core-left-top h2 span 
+{
+    color: #219EBC;
+}
+.contact-top-core-left-top p 
+{
+    font-weight: bold;
+}
+.contact-top-core-left-center
+{
+    height: 60%;
+}
+.contact-top-core-left-center-fields 
+{
+}
+.contact-top-core-left-center-fields-el 
+{
+    margin-bottom: 10px;
+}
+.contact-top-core-left-center-submit
+{
+}
+.contact-top-core-left-center-submit button 
+{
+    width: 100%;
+    background-color: #023047;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    padding: 10px; 
+}
+.contact-top-core-left-center-submit button:hover 
+{
+    transform: scale(1.02);
+    background-color: #219EBC;
+    color: #023047;
+    cursor: pointer;
+}
+.contact-top-core-left-bot 
+{
+    height: 20%;
+    display: flex;
+}
+.contact-top-core-left-bot-section 
+{
+    width: 50%;
+    display: flex;
+}
+.contact-top-core-left-bot-section-icon
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-top-core-left-bot-section-icon img 
+{
+    height: 20px;
+    object-fit: contain;
+}
+.contact-top-core-left-bot-section-core
+{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-top-core-left-bot-section-core p 
+{
+    font-size: 1rem;
+    color: #023047;
+    font-weight: bold;
+}
+.contact-top-core-left-bot-section-core span 
+{
+    font-size: 0.9rem;
+    color: #219EBC;
+}
+.contact-top-core-right 
+{
+    width: 40%;
+}
+.contact-top-core-right img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+.contact-bottom
+{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-bottom-left
+{
+
+}
+.contact-bottom-left img 
+{
+    height: 45px;
+    object-fit: contain;
+}
+.contact-bottom-center
+{
+    width: 2px;
+    height: 70px;
+    background-color: rgb(207, 207, 207);
+    margin: 0px 20px;
+}
+
+.contact-bottom-right
+{
+    font-size: 1.2rem;
+    color: #023047;
+}
