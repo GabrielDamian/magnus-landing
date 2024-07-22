@@ -1,7 +1,7 @@
 .section2-container
 {
     display: flex;
-    height: 70vh;
+    margin-bottom: 40px;
 }
 .section2-container-left 
 {

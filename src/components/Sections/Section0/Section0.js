@@ -3,6 +3,12 @@ import style from './Section0.module.css';
 import FadeInSection from "@/saturn/FadeInSection";
 
 export default function Section0() {
+
+  const integratonImgs = [
+    "/landing/booking.png",
+    "/landing/agoda.png",
+    "/landing/trivago.png"
+  ]
   return (
     <div className={style['landing-hero']} id="hero">
       <div className={style['landing-hero-magic']}>
@@ -14,14 +20,15 @@ export default function Section0() {
             flexDirection: "column",
             justifyContent: "center",
           }}
+          delay={1}
         >
           <div className={style['landing-hero-left-title']}>
             <p>Conectează-te la viitorul rezervărilor online</p>
           </div>
           <div className={style['landing-hero-left-subtitle']}>
             <p>
-              Scapă de platformele costisitoare și creează-ți propriul sistem de rezervări online
-              pentru afacerea ta
+              Scapă de platformele costisitoare și creează-ți propriul sistem de rezervări online, dedicat afacerii tale.
+              
             </p>
           </div>
           <div className={style['landing-hero-left-buttons']}>
@@ -36,9 +43,21 @@ export default function Section0() {
           <div className={style['landing-hero-left-integration']}>
             <p>Integrat cu:</p>
             <div className={style['landing-hero-left-integration-core']}>
-              <img src="/landing/booking.png" alt="booking" />
-              <img src="/landing/agoda.png" alt="agoda" />
-              <img src="/landing/trivago.png" alt="trivago" />
+              {
+                integratonImgs.map((el,index)=>{
+                  return(
+                    <FadeInSection
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    }}
+                      delay={1+index*0.3}>
+                        <img src={el} key={index} alt="integration"/>
+                      </FadeInSection>
+                  )
+                })
+              }
             </div>
           </div>
         </FadeInSection>
@@ -50,7 +69,7 @@ export default function Section0() {
             flexDirection: "column",
             justifyContent: "center",
           }}
-          delay={0.5}
+          delay={1.9}
         >
           <img src="/landing/heroRight.png" alt="hero" />
         </FadeInSection>

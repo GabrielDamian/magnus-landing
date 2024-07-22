@@ -6,18 +6,31 @@ import Section3 from "@/components/Sections/Section3/Section3";
 import Section4 from "@/components/Sections/Section4/Section4";
 import Section5 from "@/components/Sections/Section5/Section5";
 import Section6 from "@/components/Sections/Section6/Section6";
+import FadeInSection from "@/saturn/FadeInSection";
 import React from "react";
 
 const RootPage = ({ src }) => {
   console.log("index:", src);
   return (
     <div>
-      <Section0/>
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
-      <Section5/>
+      <FadeInSection delay={1}>
+        <Section0/>
+      </FadeInSection>
+      <FadeInSection>
+        <Section1/>
+      </FadeInSection>
+      <FadeInSection>
+        <Section2/>
+      </FadeInSection>
+      <FadeInSection>
+        <Section3/>
+      </FadeInSection>
+      <FadeInSection>
+        <Section4/>
+      </FadeInSection>
+      <FadeInSection>
+        <Section5/>
+      </FadeInSection>
       <Section6/>
       <Footer/>
     </div>

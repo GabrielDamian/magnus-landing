@@ -22,14 +22,16 @@
 .landing-hero-left-title
 {
     color: white;
-    font-size: 4rem;
-    margin-bottom: 50px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 .landing-hero-left-subtitle
 {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 50px;
+    padding: 0px 10px;
 }
 .landing-hero-left-buttons
 {
@@ -101,12 +103,6 @@
 {
     object-fit: contain;
 }
-
-
-
-
-
-
 .landing-hero-right
 {
     width: 50%;

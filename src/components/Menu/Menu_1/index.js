@@ -18,20 +18,52 @@ const BurgerMenu = () => {
     setIsDrawerOpen(false);
   };
 
+  // bg color switch logic
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [linkStyle, setLinksStyle] = useState('linksBeforeScroll')
+
+  useEffect(()=>{
+    if(isScrolled)
+    {
+      setLinksStyle('linksBeforeScroll')
+    }
+    else 
+    {
+      setLinksStyle('linksAfterScroll')
+    }
+  },[isScrolled])
+
+  
+  const handleScroll = () => {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+    if (scrollY > window.innerHeight) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <AppBar
       position="fixed"
       sx={{
         borderBottom: "2px solid white",
-        backgroundColor: "transparent",
+        transition: 'all 0.3s ease',
+        backgroundColor: isScrolled ? 'rgba(0, 0, 0, 0.5)' : 'white',
         backdropFilter: "blur(2px)",
-        backgroundColor: "rgba(0, 0, 0, 0.3)",
       }}
     >
       <Toolbar>
         <div className={styles.logo}>
           <Link href="/">
-            <img src="/landing/loginRightLogo.png" alt="logo"/>
+            <img src="/landing/logo.png" alt="logo"/>
           </Link>
         </div>
         {isMobile && (
@@ -41,6 +73,9 @@ const BurgerMenu = () => {
             edge="start"
             aria-label="menu"
             onClick={toggleDrawer}
+            style={{
+              color: isScrolled ? 'white':'black'
+            }}
           >
             <MenuIcon />
           </IconButton>
@@ -67,22 +102,27 @@ const BurgerMenu = () => {
         {!isMobile && (
           <ul className={styles.desktopNav}>
             <li>
-              <Link href="/#servicii" className={styles.navLink}>
+              <Link href="/#hero" className={styles[linkStyle]} >
+                Acasa
+              </Link>
+            </li>
+            <li>
+              <Link href="/#servicii" className={styles[linkStyle]} >
                 Servicii
               </Link>
             </li>
             <li>
-              <Link href="/#integrare" className={styles.navLink}>
+              <Link href="/#integrare" className={styles[linkStyle]} >
                 Integrare
               </Link>
             </li>
             <li>
-              <Link href="/#intrebari" className={styles.navLink}>
+              <Link href="/#intrebari" className={styles[linkStyle]}>
                 Intrebari
               </Link>
             </li>
             <li>
-              <Link href="/contact" className={styles.navLink}>
+              <Link href="/contact" className={styles[linkStyle]} >
                 Contact
               </Link>
             </li>

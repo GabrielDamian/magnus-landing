@@ -1,7 +1,6 @@
 .logo {
     flex-grow: 1;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     padding-left: 16px;
     font-weight: bold;
@@ -13,6 +12,8 @@
   text-decoration: none;
   color: var(--colors-accent_2);
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 .logo a img 
 {
@@ -24,16 +25,14 @@
   transform: scale(1.05);
 }
   .iconButton {
-    color: var(--colors-accent_2);
     margin-left: auto;
     display: block;
+    color: red;
   }
   .menuItem {
-    color: var(--colors-accent_1);
     padding: 20px;
     display: flex;
     justify-content: center;
-    font-family: var(--fonts-body);
     font-weight: bold;
     font-size: 1rem;
     text-transform: uppercase;
@@ -54,17 +53,22 @@
   }
   .desktopNav li a {
     text-decoration: none;
-    color: #2196f3; 
     font-size: 1rem;
     font-weight: 500;
     padding: 12px 16px;
-    transition: color 0.3s ease;
-    font-family: var(--fonts-body);
-    color: var(--colors-accent_2);
+    transition: all 0.3s ease;
   }
-  .desktopNav li a:hover {
+  .linksBeforeScroll
+  {
+    color: white;
+  }
+  .linksAfterScroll
+  {
+    color: #0F2137;
+  }
+  /* .desktopNav li a:hover {
     color: var(--colors-accent_4);
-  }
+  } */
   .menuButton
   {
     font-family: var(--fonts-body);
