@@ -12,14 +12,8 @@ export default function Section0() {
   return (
     <div className={style['landing-hero']} id="hero">
       <div className={style['landing-hero-magic']}>
-        {/* <div className="landing-hero-left"> */}
         <FadeInSection
-          style={{
-            width: "50%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
+          className={style['landing-hero-left']}
           delay={1}
         >
           <div className={style['landing-hero-left-title']}>
@@ -28,12 +22,11 @@ export default function Section0() {
           <div className={style['landing-hero-left-subtitle']}>
             <p>
               Scapă de platformele costisitoare și creează-ți propriul sistem de rezervări online, dedicat afacerii tale.
-              
             </p>
           </div>
           <div className={style['landing-hero-left-buttons']}>
             <div className={style['landing-hero-left-buttons-start']}>
-              <p>Începe </p>
+              <button>Începe</button>
             </div>
             <div className={style['landing-hero-left-buttons-video']}>
               <img src="/landing/play-button.png" alt="play" />
@@ -61,14 +54,8 @@ export default function Section0() {
             </div>
           </div>
         </FadeInSection>
-        {/* <div className="landing-hero-right"/> */}
         <FadeInSection
-          style={{
-            width: "50%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
+         className={style['landing-hero-right']}
           delay={1.9}
         >
           <img src="/landing/heroRight.png" alt="hero" />

@@ -83,16 +83,16 @@ const BurgerMenu = () => {
         <Drawer anchor="top" open={isDrawerOpen} onClose={handleClose}>
           <div role="presentation" onClick={handleClose} onKeyDown={handleClose}>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              <Link href="/">Acasă</Link>
+              <Link href="/#hero">Acasă</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              <Link href="/camere">Rooms</Link>
+              <Link href="/#servicii">Servicii</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              <Link href="/galerie">Galerie</Link>
+              <Link href="/#Integrare">Integrare</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
-              <Link href="/activitati">Activități</Link>
+              <Link href="/#intrebari">Intebari</Link>
             </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
               <Link href="/contact">Contact</Link>
@@ -103,7 +103,7 @@ const BurgerMenu = () => {
           <ul className={styles.desktopNav}>
             <li>
               <Link href="/#hero" className={styles[linkStyle]} >
-                Acasa
+              Acasă
               </Link>
             </li>
             <li>

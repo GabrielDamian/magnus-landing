@@ -6,7 +6,7 @@
 }
 .section6-magic
 {
-    width: 40%;
+    width: 50%;
 }
 .section6-title
 {
@@ -21,10 +21,6 @@
 {
     font-size: 2.5rem;
     color: #0F2137;
-}
-.section6-content
-{
-
 }
 .section6-question
 {
@@ -70,4 +66,32 @@
 .section6-question-bottom-closed 
 {
     height: 0px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1200px)
+{
+.section6-magic
+{
+    width: 80%;
+}
+}
+@media only screen and (max-width: 800px)
+{
+.section6-magic
+{
+    width: 100%;
+    padding: 20px 10px;
+}  
+}
+@media only screen and (max-width: 450px)
+{
+.section6-question
+{
+    padding: 10px;
+}
+.section6-question-top span 
+{
+    font-size: 1rem;
+}
 }

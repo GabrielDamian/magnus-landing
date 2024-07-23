@@ -44,3 +44,54 @@
     width: 100%;
     object-fit: contain;
 }
+
+/* Mobile */
+@media only screen and (max-width: 1200px)
+{
+.section4-magic
+{
+    width: 90%;
+}
+.section4-container-left h1 
+{
+    font-size: 2rem;
+}
+}
+@media only screen and (max-width: 800px)
+{
+.section4-magic
+{
+    flex-direction: column;
+    width: 100%;
+}
+.section4-container-left 
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.section4-container-left h1 
+{
+    text-align: center;
+}
+.section4-container-right 
+{
+    width: 100%;
+}
+}
+@media only screen and (max-width: 400px)
+{
+.section4-container-left h1 
+{
+    font-size: 1.4rem;
+}
+.section4-container-left p 
+{
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+.section4-container-left span 
+{
+    margin-bottom: 10px;
+    display: block;
+}
+}

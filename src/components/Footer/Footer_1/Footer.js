@@ -14,8 +14,8 @@ export default function Footer() {
     ["Politica de confidențialitate", "/politica-platforma"],
   ];
   const sectionLinks = [
-    ["Contactează-ne", "/contact#top"],
-    ["Autentificare", "/login#top"],
+    ["Contactează-ne", "/contact"],
+    ["Autentificare", "/login"],
   ];
   return (
     <div className={style['landing-footer-container']}>

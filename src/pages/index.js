@@ -16,7 +16,7 @@ const RootPage = ({ src }) => {
       <FadeInSection delay={1}>
         <Section0/>
       </FadeInSection>
-      <FadeInSection>
+       <FadeInSection>
         <Section1/>
       </FadeInSection>
       <FadeInSection>
@@ -28,11 +28,16 @@ const RootPage = ({ src }) => {
       <FadeInSection>
         <Section4/>
       </FadeInSection>
+      
       <FadeInSection>
         <Section5/>
       </FadeInSection>
-      <Section6/>
-      <Footer/>
+      
+      <FadeInSection>
+        <Section6/>
+      </FadeInSection>
+      
+      <Footer/> 
     </div>
   );
 };

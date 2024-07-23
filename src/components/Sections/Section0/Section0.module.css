@@ -42,15 +42,17 @@
 {
     margin-right: 20px;
 }
-.landing-hero-left-buttons-start p 
+.landing-hero-left-buttons-start button
 {
-    padding: 15px 25px;
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: white;
     color: #0F2137;
     transition: all 0.3s ease;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
 }
 .landing-hero-left-buttons-start p:hover
 {
@@ -109,9 +111,131 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .landing-hero-right img 
 {
     height: 80%;
     object-fit: contain;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1600px) {
+.landing-hero-left-title
+{
+    font-size: 2rem;
+}
+.landing-hero-left-integration-core img 
+{
+    height: 30px;
+    object-fit: contain;
+}
+}
+@media only screen and (max-width: 1200px)
+{
+.landing-hero-magic 
+{
+    width: 85%;
+}
+.landing-hero-left-title
+{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.landing-hero-left-subtitle
+{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.landing-hero-left-integration-core img 
+{
+    height: 25px;
+    object-fit: contain;
+}
+.landing-hero-right img 
+{
+    height: 45%;
+}
+}
+
+@media only screen and (max-width: 750px)
+{
+.landing-hero
+{
+    height: auto;
+    padding-top: 100px;
+    background-size: cover;
+}
+.landing-hero-left 
+{
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-top: 100px;
+}
+.landing-hero-left-title
+{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.landing-hero-left-subtitle
+{
+    text-align: center;
+    width: 70%;
+}
+.landing-hero-left-buttons
+{
+    margin-bottom: 10px;
+}
+.landing-hero-left-integration-core img 
+{
+    margin: 0px 20px;
+    height: 20px;
+}
+.landing-hero-magic 
+{
+    width: 95%;
+    flex-direction: column;
+    height: block;
+}
+.landing-hero-right 
+{
+    width: 100%;
+}
+.landing-hero-right img 
+{
+    height: 300px;
+    object-fit: contain;
+}
+}
+
+@media only screen and (max-width: 420px)
+{
+.landing-hero-left-title
+{
+    font-size: 2rem;
+}
+.landing-hero-left-subtitle
+{
+    width: 90%;
+    margin-bottom: 30px;
+}
+.landing-hero-left-buttons
+{
+    margin-bottom: 30px;
+}
+.landing-hero-left-integration-core
+{
+    padding: 20px 10px;
+}
+.landing-hero-left-integration-core img 
+{
+    margin-right: 5px;
+    height: 16px;
+}
+.landing-hero-right img 
+{
+    width: 100%;
+}
 }

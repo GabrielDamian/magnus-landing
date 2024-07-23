@@ -23,7 +23,7 @@ export default function Section2() {
           <span>FUNCTIONALITĂȚI CHEIE</span>
         </div>
         <div className={style['section2-container-right-title']}>
-          <h3>Acum tu îți controlezi tarifele și rezervările intregral</h3>
+          <h3>Acum tu îți controlezi tarifele și rezervările integral</h3>
         </div>
         <div className={style['section2-container-right-items']}>
           {items.map((el) => {

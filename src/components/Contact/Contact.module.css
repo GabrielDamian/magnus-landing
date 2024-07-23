@@ -2,10 +2,12 @@
 {
     background-color: white;
     margin-top: 100px;
+    border: 2px solid blue;
 }
 .contact-core
 {
-    height: 85vh;
+    /* height: 85vh; */
+    border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,6 +17,7 @@
 {
     width: 70%;
     height: 100%;
+    border: 2px solid blue;
 }
 .contact-top
 {
@@ -28,12 +31,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid green;
+    padding: 20px 40px;
 }
 .contact-top-core
 {
-    width: 80%;
+    width: 100%;
     height: 80%;
     display: flex;
+    border: 2px solid blue;
 }
 .contact-top-core-left
 {
@@ -142,17 +148,14 @@
     border-radius: 10px;
 
 }
-
-
-
-
-
 .contact-bottom
 {
-    height: 20%;
+    border: 2px solid red;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .contact-bottom-left
 {
@@ -175,4 +178,10 @@
 {
     font-size: 1.2rem;
     color: #023047;
+}
+
+/* Mobile */
+@media only screen and (max-width: 1200px)
+{
+
 }

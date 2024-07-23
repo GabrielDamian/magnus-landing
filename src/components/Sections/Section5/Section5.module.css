@@ -1,6 +1,5 @@
 .section5-container
 {
-    height: 80vh;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
@@ -51,4 +50,50 @@
     line-height: 40px;
     width: 80%;
     font-size: 1.1rem;
+}
+/* Mobile */
+
+@media only screen and (max-width: 1200px)
+{
+.section5-magic
+{
+    width: 100%;
+    padding: 30px 20px;
+}
+}
+@media only screen and (max-width: 700px)
+{
+.section5-magic
+{
+    flex-direction: column;
+}
+.section5-left
+{
+    width: 100%;
+}
+.section5-right
+{
+    width: 100%;
+}
+.section5-right h1 
+{
+    text-align: center;
+}
+.section5-right p
+{
+    width: 100%;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 400px)
+{
+.section5-right h1 
+{
+    font-size: 1.5rem;
+}
+.section5-right p
+{
+    font-size: 0.8rem;
+    line-height: 30px;
+}
 }
