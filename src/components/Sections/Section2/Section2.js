@@ -26,9 +26,9 @@ export default function Section2() {
           <h3>Acum tu îți controlezi tarifele și rezervările integral</h3>
         </div>
         <div className={style['section2-container-right-items']}>
-          {items.map((el) => {
+          {items.map((el,index) => {
             return (
-              <div className={style['section2-container-right-items-item']}>
+              <div className={style['section2-container-right-items-item']} key={index}>
                 <div className={style['section2-container-right-items-item-img']}>
                   <img src={el.img} />
                 </div>

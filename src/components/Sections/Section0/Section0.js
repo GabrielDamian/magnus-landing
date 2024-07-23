@@ -40,6 +40,7 @@ export default function Section0() {
                 integratonImgs.map((el,index)=>{
                   return(
                     <FadeInSection
+                      key={index}
                       style={{
                         display: 'flex',
                         alignItems: 'center',

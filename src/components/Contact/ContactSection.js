@@ -46,9 +46,9 @@ export default function ContactSection() {
                 </div>
                 <div className={style['contact-top-core-left-center']}>
                   <div className={style['contact-top-core-left-center-fields']}>
-                    {Object.keys(fields).map((el) => {
+                    {Object.keys(fields).map((el,index) => {
                       return (
-                        <div className={style['contact-top-core-left-center-fields-el']}>
+                        <div className={style['contact-top-core-left-center-fields-el']} key={index}>
                           <TextField
                             id="outlined-basic"
                             label={el}
@@ -69,9 +69,9 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className={style['contact-top-core-left-bot']}>
-                  {info.map((el) => {
+                  {info.map((el,index) => {
                     return (
-                      <div className={style['contact-top-core-left-bot-section']}>
+                      <div className={style['contact-top-core-left-bot-section']} key={index}>
                         <div className={style['contact-top-core-left-bot-section-icon']}>
                           <img src={el.icon} alt="icon" />
                         </div>

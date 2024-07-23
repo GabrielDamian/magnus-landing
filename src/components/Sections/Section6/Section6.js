@@ -29,8 +29,8 @@ export default function Section6() {
           <h1>Ai întrebări?</h1>
         </div>
         <div className={style['section6-content']}>
-          {items.map((el) => {
-            return <Question q={el[0]} a={el[1]} />;
+          {items.map((el,index) => {
+            return <Question q={el[0]} a={el[1]} key={index}/>;
           })}
         </div>
       </div>

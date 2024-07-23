@@ -48,9 +48,9 @@ export default function Section3() {
           <h2>Ce găsești în platforma noastră</h2>
         </div>
         <div className={style['section3-content']}>
-          {items.map((el) => {
+          {items.map((el,index) => {
             return (
-              <div className={style['section3-item']}>
+              <div className={style['section3-item']} key={index}>
                 <div
                   className={style['section3-item-img']}
                   style={{

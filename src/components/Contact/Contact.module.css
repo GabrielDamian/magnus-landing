@@ -1,13 +1,10 @@
 .contact-container
 {
     background-color: white;
-    margin-top: 100px;
-    border: 2px solid blue;
+    margin-top: 60px;
 }
 .contact-core
 {
-    /* height: 85vh; */
-    border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,13 +12,11 @@
 }
 .contact-core-magic
 {
-    width: 70%;
+    width: 80%;
     height: 100%;
-    border: 2px solid blue;
 }
 .contact-top
 {
-    height: 80%;
     -webkit-box-shadow: 0px 0px 38px -5px rgba(0,0,0,0.41);
     -moz-box-shadow: 0px 0px 38px -5px rgba(0,0,0,0.41);
     box-shadow: 0px 0px 38px -5px rgba(0,0,0,0.41);
@@ -31,15 +26,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid green;
-    padding: 20px 40px;
+    padding: 40px;
 }
 .contact-top-core
 {
-    width: 100%;
-    height: 80%;
     display: flex;
-    border: 2px solid blue;
 }
 .contact-top-core-left
 {
@@ -48,7 +39,7 @@
 }
 .contact-top-core-left-top 
 {
-    height: 20%;
+    margin-bottom: 20px;
 }
 .contact-top-core-left-top h2 
 {
@@ -61,10 +52,6 @@
 .contact-top-core-left-top p 
 {
     font-weight: bold;
-}
-.contact-top-core-left-center
-{
-    height: 60%;
 }
 .contact-top-core-left-center-fields 
 {
@@ -96,13 +83,15 @@
 }
 .contact-top-core-left-bot 
 {
-    height: 20%;
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 .contact-top-core-left-bot-section 
 {
     width: 50%;
     display: flex;
+    min-width: 240px;
 }
 .contact-top-core-left-bot-section-icon
 {
@@ -146,16 +135,13 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
-
 }
 .contact-bottom
 {
-    border: 2px solid red;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .contact-bottom-left
 {
@@ -183,5 +169,43 @@
 /* Mobile */
 @media only screen and (max-width: 1200px)
 {
-
+.contact-core
+{
+    padding: 30px 20px;
+}
+.contact-core-magic
+{
+    width: 100%;
+}
+.contact-top
+{
+    padding: 20px;
+}
+}
+@media only screen and (max-width: 800px)
+{
+.contact-top-core-left-top h2 
+{
+    font-size: 1.5rem;
+}
+.contact-top-core-left-top p
+{
+    font-size: 0.8rem;
+}
+}
+@media only screen and (max-width: 550px)
+{
+.contact-top-core
+{
+    flex-direction: column;
+}
+.contact-top-core-left
+{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.contact-top-core-right
+{
+    width: 100%;
+}
 }

@@ -25,9 +25,9 @@ export default function Footer() {
             <img src="/landing/logoFooter.png" alt="logo" />
           </div>
           <div className={style['landing-footer-left-social']}>
-            {social.map((el) => {
+            {social.map((el,index) => {
               return (
-                <Link href={el[0]} target="_blank" rel="noreferrer">
+                <Link href={el[0]} target="_blank" rel="noreferrer" key={index}>
                   <img src={el[1]} alt="social" />
                 </Link>
               );
@@ -38,16 +38,16 @@ export default function Footer() {
           <div className={style['landing-footer-center-section']}>
             <h2>Pentru clienți</h2>
             <div className={style['landing-footer-center-section-items']}>
-              {sectionAbout.map((el) => {
-                return <Link href={el[1]}>{el[0]}</Link>;
+              {sectionAbout.map((el,index) => {
+                return <Link href={el[1]} key={index}>{el[0]}</Link>;
               })}
             </div>
           </div>
           <div className={style['landing-footer-center-section']}>
             <h2>Utile</h2>
             <div className={style['landing-footer-center-section-items']}>
-              {sectionLinks.map((el) => {
-                return <Link href={el[1]}>{el[0]}</Link>;
+              {sectionLinks.map((el,index) => {
+                return <Link href={el[1]} key={index}>{el[0]}</Link>;
               })}
             </div>
           </div>
