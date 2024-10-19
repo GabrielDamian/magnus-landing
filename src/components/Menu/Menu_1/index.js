@@ -20,20 +20,16 @@ const BurgerMenu = () => {
 
   // bg color switch logic
   const [isScrolled, setIsScrolled] = useState(false);
-  const [linkStyle, setLinksStyle] = useState('linksBeforeScroll')
+  const [linkStyle, setLinksStyle] = useState("linksBeforeScroll");
 
-  useEffect(()=>{
-    if(isScrolled)
-    {
-      setLinksStyle('linksBeforeScroll')
+  useEffect(() => {
+    if (isScrolled) {
+      setLinksStyle("linksBeforeScroll");
+    } else {
+      setLinksStyle("linksAfterScroll");
     }
-    else 
-    {
-      setLinksStyle('linksAfterScroll')
-    }
-  },[isScrolled])
+  }, [isScrolled]);
 
-  
   const handleScroll = () => {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     if (scrollY > window.innerHeight) {
@@ -44,9 +40,9 @@ const BurgerMenu = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -55,15 +51,15 @@ const BurgerMenu = () => {
       position="fixed"
       sx={{
         borderBottom: "2px solid white",
-        transition: 'all 0.3s ease',
-        backgroundColor: isScrolled ? 'rgba(0, 0, 0, 0.5)' : 'white',
+        transition: "all 0.3s ease",
+        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.5)" : "white",
         backdropFilter: "blur(2px)",
       }}
     >
       <Toolbar>
         <div className={styles.logo}>
           <Link href="/">
-            <img src="/landing/logo.png" alt="logo"/>
+            <img src="/landing/logo.png" alt="logo" />
           </Link>
         </div>
         {isMobile && (
@@ -74,7 +70,7 @@ const BurgerMenu = () => {
             aria-label="menu"
             onClick={toggleDrawer}
             style={{
-              color: isScrolled ? 'white':'black'
+              color: isScrolled ? "white" : "black",
             }}
           >
             <MenuIcon />
@@ -82,6 +78,9 @@ const BurgerMenu = () => {
         )}
         <Drawer anchor="top" open={isDrawerOpen} onClose={handleClose}>
           <div role="presentation" onClick={handleClose} onKeyDown={handleClose}>
+            <MenuItem className={styles.menuItem} onClick={handleClose}>
+              <Link href="/#pachete">Pachete</Link>
+            </MenuItem>
             <MenuItem className={styles.menuItem} onClick={handleClose}>
               <Link href="/#hero">Acasă</Link>
             </MenuItem>
@@ -94,6 +93,7 @@ const BurgerMenu = () => {
             <MenuItem className={styles.menuItem} onClick={handleClose}>
               <Link href="/#intrebari">Intebari</Link>
             </MenuItem>
+
             <MenuItem className={styles.menuItem} onClick={handleClose}>
               <Link href="/contact">Contact</Link>
             </MenuItem>
@@ -102,17 +102,22 @@ const BurgerMenu = () => {
         {!isMobile && (
           <ul className={styles.desktopNav}>
             <li>
-              <Link href="/#hero" className={styles[linkStyle]} >
-              Acasă
+              <Link href="/#pachete" className={styles[linkStyle]}>
+                <button className={styles.buyBtn}>Pachete</button>
               </Link>
             </li>
             <li>
-              <Link href="/#servicii" className={styles[linkStyle]} >
+              <Link href="/#hero" className={styles[linkStyle]}>
+                Acasă
+              </Link>
+            </li>
+            <li>
+              <Link href="/#servicii" className={styles[linkStyle]}>
                 Servicii
               </Link>
             </li>
             <li>
-              <Link href="/#integrare" className={styles[linkStyle]} >
+              <Link href="/#integrare" className={styles[linkStyle]}>
                 Integrare
               </Link>
             </li>
@@ -122,7 +127,7 @@ const BurgerMenu = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className={styles[linkStyle]} >
+              <Link href="/contact" className={styles[linkStyle]}>
                 Contact
               </Link>
             </li>

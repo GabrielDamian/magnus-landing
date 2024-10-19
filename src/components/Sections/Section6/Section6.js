@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from './Section6.module.css';
+import style from "./Section6.module.css";
 
 export default function Section6() {
   const items = [
@@ -22,15 +22,15 @@ export default function Section6() {
   ];
 
   return (
-    <div className={style['section6-container']}>
-      <div className={style['section6-magic']}>
-        <div className={style['section6-title']}>
+    <div className={style["section6-container"]}>
+      <div className={style["section6-magic"]}>
+        <div className={style["section6-title"]}>
           <span>ÎNTREBĂRI FRECVENTE</span>
           <h1>Ai întrebări?</h1>
         </div>
-        <div className={style['section6-content']}>
-          {items.map((el,index) => {
-            return <Question q={el[0]} a={el[1]} key={index}/>;
+        <div className={style["section6-content"]}>
+          {items.map((el, index) => {
+            return <Question q={el[0]} a={el[1]} key={index} />;
           })}
         </div>
       </div>
@@ -46,19 +46,21 @@ const Question = ({ q, a }) => {
   };
 
   return (
-    <div className={style['section6-question']} id="intrebari">
-      <div className={style['section6-question-top']}>
+    <div className={style["section6-question"]} id="intrebari">
+      <div className={style["section6-question-top"]}>
         <img
           src="/landing/Section6Expand.png"
           alt="expand"
           onClick={handleSwtich}
-          className={`${isOpen ? style['magic-class'] : null}`}
+          className={`${isOpen ? style["magic-class"] : null}`}
         />
         <span>{q}</span>
       </div>
       <div
-      className={`${style['section6-question-bottom']} ${!isOpen ? style['section6-question-bottom-closed'] : ''}`}
-    >
+        className={`${style["section6-question-bottom"]} ${
+          !isOpen ? style["section6-question-bottom-closed"] : ""
+        }`}
+      >
         <p>{a}</p>
       </div>
     </div>
